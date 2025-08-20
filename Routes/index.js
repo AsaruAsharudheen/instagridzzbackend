@@ -5,6 +5,7 @@ const imageRoutes = require('./image-route');
 const adminRoutes = require('./admin-route');
 const videoRoutes = require('./video-route');
 const fundRoutes = require('./fund-routes');
+const nerchaRoutes = require('./nercha-routes');
 
 const router = express.Router();
 
@@ -13,5 +14,6 @@ router.use('/upload', imageRoutes);
 router.use('/admin', adminRoutes);
 router.use('/uploadVideo', videoRoutes);
 router.use('/funds', fundRoutes);
+router.use('/nercha', nerchaRoutes);
 
 module.exports = router;
